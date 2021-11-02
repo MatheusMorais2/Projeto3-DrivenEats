@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#E5E5E5;
+}
+
+.fonte-loka {
+    font-family: 'Righteous', cursive;
+}
+
+.fonte-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+header {
+    background-color:#CF2B2B;
+    width: 100%;
+    height: 92px;
+    position: fixed;
+    box-shadow: 0px 5px 10px black;
+    padding: 0 21px;
+    z-index: 10;
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo {
+    color: white;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 44px;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+main {
+    padding-top: 123px;
+    padding-bottom: 92px;
+}
+
+main>div>p {
+    font-weight: 400;
+    font-family: 'Righteous', cursive;
+    font-Size: 26px;
+    color: #333333;
+    margin-bottom: 17px;
+}
+
+.tipo-comida {
+    width: 100%;
+    margin-left: 14px;
+}
+
+.prato_principal {
+    height: 216px;
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 27px;
+    gap: 16px;
+}
+
+.bebida {
+    height: 216px;
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 27px;
+    gap: 16px;
+}
+
+.sobremesa {
+    height: 216px;
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 27px;
+    gap: 16px;
+}
+
+.opcao {
+    height: 216px;
+    width: 172px;
+    background-color: white;
+    border-radius: 9px;
+    box-shadow: 0px 0px 5px lightgrey;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 14px;
+    padding-top: 18px;
+    padding: 18px 14px 14px 14px;
+    position: relative;
+}
+
+.opcao>img {
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+    
+}
+
+.nome-comida {
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700; 
+}
+
+.descricao-comida {
+    color: #A6A6A6;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; 
+    font-size: 15px;
+}
+
+
+.preco-comida {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; 
+    font-size: 16px;
+}
+
+footer {
+    width: 100%;
+    height: 92px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+}
+
+button {
+    border: none;
+}
+
+.pedidos-nao-selecionados {
+    width: 88%;
+    height: 61px;
+    border-radius: 50px;
+    background-color: #CBCBCB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pedidos-nao-selecionados p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+.pedidos-selecionados {
+    width: 88%;
+    height: 61px;
+    border-radius: 50px;
+    background-color: #32B72F;
+    padding: auto;
+}
+
+
+
+.pedidos-selecionados p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+
+.quero-esse {
+    box-shadow: 0px 0px 0px 5px #32B72F inset;
+}
+
+
+.icone {
+    position:absolute;
+    bottom: 9px;
+    right: 15px;
+    color: #32B72F;
+    font-size: 17px;
+}
+
+.tela_confirmacao {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffa2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.quadro_confirmacao {
+    width: 91%;
+    height: 50%;
+    padding: 15px 0px;
+
+    background-color: #50D074;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 9px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.titulo_confirmacao {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 140%;
+    color: white;
+}
+
+.pedido_confirmacao {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    color: white;
+}
+
+.total {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: white;
+}
+
+.confirmar {
+    width: 80%;
+    height: 15%;
+    border-radius: 100px;
+    background-color: white;
+    padding: auto;
+}
+
+.confirmar span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 150%;
+    color: #50D074;
+    ;
+}
+
+.totalzao {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.cancelar {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #50D074;
+    color: white;
+}
+
+.so_confirma {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.display_none {
+    display: none;
+}
+
+
+
+

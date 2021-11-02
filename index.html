@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrivenEats</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header>
+        <p class="titulo" >DrivenEats</p>
+        <p class="subtitulo">Sua comida em 6 minutos</p>
+    </header>
+    
+
+    <main>
+
+        <div class="tipo-comida">
+            <p>Primeiro, seu prato</p>
+            <div class="prato_principal">
+                <div class="opcao" onclick="selecionar(this)">
+                    <img src="https://www.figma.com/file/i8tceg0W7Z9FfANaDbR3FV/image/ae77de14bf111f3d6f1c5750a6f9a93e12dc3742?fuid=1030901089631031729">
+                    <p class="nome-comida">Frango yin-yang</p>
+                    <p class="descricao-comida">Um pouco de batata, um pouco de salada</p>
+                    <p class="preco-comida">R$14,99</p>
+                    <div class="icone display_none"><ion-icon name="checkmark-circle"></ion-icon></div>
+                    
+                </div>
+                <div class="opcao" onclick="selecionar(this)">
+                    <img src="imagens/lasanha.webp">
+                    <p class="nome-comida">Lasanha Bolonhesa</p>
+                    <p class="descricao-comida">Muito molho, carne e queijo</p>
+                    <p class="preco-comida">R$17,50</p>
+                    <div class="icone display_none"><ion-icon name="checkmark-circle"></ion-icon></div>
+                </div>
+                <div class="opcao" onclick="selecionar(this)">
+                    <img src="imagens/panqueca.jpg">
+                    <p class="nome-comida">Panqueca de Frango</p>
+                    <p class="descricao-comida">Panquequinha</p>
+                    <p class="preco-comida">R$11,90</p>
+                    <div class="icone display_none"><ion-icon name="checkmark-circle"></ion-icon></div>
+                </div>
+                <div class="opcao" onclick="selecionar(this)">
+                    <img src="imagens/strogonoff.webp">
+                    <p class="nome-comida">Strogonoff de Frango</p>
+                    <p class="descricao-comida">Preciso falar mais alguma coisa?</p>
+                    <p class="preco-comida">R$16,00</p>
+                    <div class="icone display_none"><ion-icon name="checkmark-circle"></ion-icon></div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="tipo-comida">
+            <p>Agora, sua bebida</p>
+            <div class="bebida">
+                <div class="opcao" onclick="selecionar(this)">
+                    <img src="https://www.figma.com/file/i8tceg0W7Z9FfANaDbR3FV/image/67597a169e54b5ddd2dd66116d1a24abd17ae51c?fuid=1030901089631031729">
+                    <p class="nome-comida">Coca-Cola lata</p>
+                    <p class="descricao-comida">hmm coquinha gelada hmm</p>
+                    <p class="preco-comida">R$4,99</p>
+                    <div class="icone display_none"><ion-icon name="checkmark-circle"></ion-icon></div>
+                </div>
+                <div class="opcao" onclick="selecionar(this)">
+                    <img src="imagens/agua.jpg">
+                    <p class="nome-comida">Água</p>
+                    <p class="descricao-comida">Bebam água, crianças</p>
+                    <p class="preco-comida">R$2,00</p>
+                    <div class="icone display_none"><ion-icon name="checkmark-circle"></ion-icon></div>
+                </div>
+                <div class="opcao" onclick="selecionar(this)">
+                    <img src="imagens/guaraviton.jpg">
+                    <p class="nome-comida">Guaraviton</p>
+                    <p class="descricao-comida">Refrigerante sem o gás chato</p>
+                    <p class="preco-comida">R$3,50</p>
+                    <div class="icone display_none"><ion-icon name="checkmark-circle"></ion-icon></div>
+                </div>
+                <div class="opcao" onclick="selecionar(this)">
+                    <img src="imagens/sucodelaranja.webp">
+                    <p class="nome-comida">Suco de Laranja</p>
+                    <p class="descricao-comida">Aaaah que delicia, cara</p>
+                    <p class="preco-comida">R$6,00</p>
+                    <div class="icone display_none"><ion-icon name="checkmark-circle"></ion-icon></div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="tipo-comida">
+            <p>Por fim, sua sobremesa</p>
+            <div class="sobremesa">
+                <div class="opcao" onclick="selecionar(this)">
+                    <img src="https://s3-alpha-sig.figma.com/img/69c2/0177/16f95b6cce396fb4800480789f93d260?Expires=1636329600&Signature=IzHQNkWO2tUItPx6aI0Yqh56SZhOkUpFd6VWHF1d199H~K5RGdkpF~0o4rVjb1XvryqzfuFFbU7HhRg9JObA3wYL6ZwcCDog594D3tNP4NgeyNWZWBk~JYIbtFVlpA6YrryjyCOEsPxwCCiVTHsk89ovwkMQ3rh1YTffkumI2nnMq1FHnehiTEbI7c2pQhqyGjrbtSvj4UrkDM2xrKf~rcDw9O3~KkGaTkhIee~D~w-gY7e-f84fU~4ZLZGKI8XIJxX02GFQZub5GvmLoLjYhKliQoDNzm1XYMRAd-oEmagGQxdViqfiaLJZc2VXKVJanZTwZGFiF3bYEXalU-lT6w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA">
+                    <p class="nome-comida">Pudim</p>
+                    <p class="descricao-comida">Quem nao ama um pudim?</p>
+                    <p class="preco-comida">R$7,90</p>
+                    <div class="icone display_none"><ion-icon name="checkmark-circle"></ion-icon></div>
+                </div>
+                <div class="opcao" onclick="selecionar(this)">
+                    <img src="imagens/Bolo-de-cenoura-com-cobertura-de-chocolate.jpg">
+                    <p class="nome-comida">Bolo de Cenoura</p>
+                    <p class="descricao-comida">Com cobertura de chocolate, óbvio</p>
+                    <p class="preco-comida">R$5,50</p>
+                    <div class="icone display_none"><ion-icon name="checkmark-circle"></ion-icon></div>
+                </div>
+                <div class="opcao" onclick="selecionar(this)">
+                    <img src="imagens/alfajor.webp">
+                    <p class="nome-comida">Alfajor</p>
+                    <p class="descricao-comida">Chocolate, biscoito e caramelo hmmm</p>
+                    <p class="preco-comida">R$4,00</p>
+                    <div class="icone display_none"><ion-icon name="checkmark-circle"></ion-icon></div>
+                </div>
+                <div class="opcao" onclick="selecionar(this)">
+                    <img src="imagens/rabanada.jpg">
+                    <p class="nome-comida">Rabanada</p>
+                    <p class="descricao-comida">Porque só pode rabanada no Natal?</p>
+                    <p class="preco-comida">R$6,00</p>
+                    <div class="icone display_none"><ion-icon name="checkmark-circle"></ion-icon></div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <button type="button" disabled class="pedidos-nao-selecionados">
+            <p>Selecione os 3 itens<br>para fechar o pedido</p>
+        </button>
+        
+        <button class="pedidos-selecionados display_none" onclick="confirmar()">
+            <p>Fechar pedido</p>
+        </button>   
+    </footer>
+
+    <div class="tela_confirmacao display_none">
+        <div class="quadro_confirmacao">
+            <p class="titulo_confirmacao">Confirme seu pedido</p>
+            <div class='so_confirma'> <span class="prato_confirm pedido_confirmacao" ></span> <span class="preco_prato pedido_confirmacao"></span></div>
+            <div class='so_confirma'> <span class="bebida_confirm pedido_confirmacao"></span> <span class="preco_bebida pedido_confirmacao"></span></div>
+            <div class='so_confirma'> <span class="sobremesa_confirm pedido_confirmacao"></span> <span class="preco_sobremesa pedido_confirmacao"></span></div>
+            <div class='totalzao'> <span class="total">Total</span> <span class="total valor"></span> </div>
+            <button class="confirmar" onclick="chamar_zap()"> <span>Tudo certo, pode pedir</span></button>
+            <button class="cancelar" onclick="cancelar()">Cancelar</button>
+        </div>
+    </div>
+
+    <div class="quero-esse">
+    </div>
+
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src='script.js'></script>
+</body>
+</html>
