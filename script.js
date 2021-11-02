@@ -132,13 +132,13 @@ function chamar_zap() {
 
     
 
-    const pedidoURI = encodeURI('Olá, gostaria de fazer o pedido:\
-        - Prato: '+prato+
-        ' - Bebida: '+bebida+
-        ' - Sobremesa: '+sobremesa+
-        ' - Total: R$' +total.toFixed(2)+
-        ' - Nome: '+nome+
-        ' - Endereço: '+endereco)
+    const pedidoURI = encodeURI(`Olá, gostaria de fazer o pedido:\n
+        - Prato: ${prato}\n
+        - Bebida: ${bebida}\n
+        - Sobremesa: ${sobremesa}\n
+        - Total: R$${total.toFixed(2)}\n
+        - Nome: ${nome}\n
+        - Endereço: ${endereco}`)
 
     //Pegar as informações do pedido, transformar em URL code, e jogar dentro do href
 
